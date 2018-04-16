@@ -1,7 +1,8 @@
 ---
 - hosts: all
   connection: local
-
-  shell: check_services.sh >> ldap_status.log
-  args:
-  chdir: /opt/vox/bin/
+  tasks:
+   - name: "Checking Active LDAP Connections"
+   shell: check_services.sh >> ldap_status.log
+   args:
+   chdir: /opt/vox/bin/
