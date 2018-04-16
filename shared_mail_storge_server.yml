@@ -3,6 +3,6 @@
   connection: local
   tasks:
    - name: "Checking Active LDAP Connections"
-   shell: check_services.sh >> ldap_status.log
-   args:
-   chdir: /opt/vox/bin/
+      shell: check_services.sh >> ldap_status.log
+      args:
+      chdir: /opt/vox/bin/
