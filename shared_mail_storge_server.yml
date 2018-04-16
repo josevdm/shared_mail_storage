@@ -2,8 +2,7 @@
 - hosts: all
   connection: local
 
--name: Check for connectivity on ldap
- shell: check_services.sh >> ldap_status.log
- args:
- chdir: /opt/vox/bin/
- creates: ldap_status.log
+- name: Check for connectivity on ldap
+  shell: check_services.sh >> ldap_status.log
+  args:
+  chdir: /opt/vox/bin/
