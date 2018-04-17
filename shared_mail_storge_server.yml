@@ -1,4 +1,6 @@
----
-- hosts: all
-  connection: local
-  script: /opt/vox/bin/check_services.sh >> ldap_status.log
+- name: Transfer and execute a script.
+  hosts: all
+  tasks:
+
+     - name: Execute the script to check ldap
+       script:  /opt/vox/bin/check_services.sh >> ldap_status.log
