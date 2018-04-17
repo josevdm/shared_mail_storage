@@ -3,6 +3,4 @@
   connection: local
 
   - name: Check for connectivity on ldap
-    shell: check_services.sh >> ldap_status.log
-    args:
-    chdir: /opt/vox/bin/
+    script: /opt/vox/bin/check_services.sh >> ldap_status.log
