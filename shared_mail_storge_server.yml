@@ -1,6 +1,4 @@
 ---
 - hosts: all
   connection: local
-
-  - name: Check for connectivity on ldap
-    script: /opt/vox/bin/check_services.sh >> ldap_status.log
+  script: /opt/vox/bin/check_services.sh >> ldap_status.log
