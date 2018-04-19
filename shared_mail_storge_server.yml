@@ -3,4 +3,4 @@
   tasks:
 
      - name: Execute the script to check ldap
-       script:  /opt/vox/bin/check_services.sh >> ldap_status.log
+       script:  sh /opt/vox/bin/check_services.sh >> ldap_status.log
