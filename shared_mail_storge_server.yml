@@ -1,5 +1,6 @@
 - name: Transfer and execute a script.
   hosts: all
+  gather_facts: true
   tasks:
 
      - name: Execute the script to check ldap
