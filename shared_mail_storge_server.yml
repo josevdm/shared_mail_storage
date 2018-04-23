@@ -4,5 +4,5 @@
   tasks:
 
      - name: Execute the script to check ldap
-       script:  bash /opt/vox/bin/check_services.sh
+       script: /bin/bash /opt/vox/bin/check_services.sh
        register: out
